@@ -1279,10 +1279,10 @@ export default function Index() {
                 style={{ display: "none" }}
               >
                 <p className="text-supremint-blue text-sm leading-relaxed">
-                  AI automation streamlines your operations, reduces manual
-                  work, and improves efficiency. This means cost savings, faster
-                  turnaround times, and more consistent service delivery for
-                  your customers.
+                  You'll save time, reduce costs, and gain insights that help
+                  you make better decisions—all while delivering a better
+                  experience to your customers. Most of our clients see
+                  improvements within the first month of implementation.
                 </p>
               </div>
             </div>
