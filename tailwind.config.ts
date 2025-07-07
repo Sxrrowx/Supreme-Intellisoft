@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        supremint: {
+          red: "hsl(var(--supremint-red))",
+          blue: "hsl(var(--supremint-blue))",
+          gray: "hsl(var(--supremint-gray))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
