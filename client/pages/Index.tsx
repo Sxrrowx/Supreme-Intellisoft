@@ -1172,6 +1172,275 @@ export default function Index() {
           </div>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <div className="relative py-24 px-4 sm:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex flex-col items-center text-center mb-16">
+            {/* Badge */}
+            <div className="inline-flex items-center px-3 py-2 bg-supremint-gray rounded-md mb-6">
+              <span className="text-supremint-blue text-sm font-medium">
+                FAQs
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="max-w-3xl mb-6">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-supremint-blue">
+                We've Got the Answers You're Looking For
+              </h2>
+            </div>
+
+            {/* Subtitle */}
+            <div className="max-w-2xl mb-8">
+              <p className="text-supremint-blue text-lg font-medium leading-relaxed">
+                Quick answers to your AI automation questions.
+              </p>
+            </div>
+          </div>
+
+          {/* FAQ Items */}
+          <div className="max-w-4xl mx-auto space-y-4">
+            {/* FAQ 1 - What is AI automation? */}
+            <div className="bg-white/5 rounded-lg border border-gray-200/10">
+              <button
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-white/10 transition-colors rounded-lg"
+                onClick={() => {
+                  const content = document.getElementById("faq-1-content");
+                  const icon = document.getElementById("faq-1-icon");
+                  if (content && icon) {
+                    const isOpen = content.style.display !== "none";
+                    content.style.display = isOpen ? "none" : "block";
+                    icon.style.transform = isOpen
+                      ? "rotate(0deg)"
+                      : "rotate(180deg)";
+                  }
+                }}
+              >
+                <span className="text-supremint-blue font-medium text-base">
+                  What is AI automation?
+                </span>
+                <svg
+                  id="faq-1-icon"
+                  className="w-4 h-4 text-supremint-blue transition-transform duration-200"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M13.1848 6.92222L8.49731 11.6097C8.43199 11.6753 8.35437 11.7273 8.26891 11.7628C8.18344 11.7983 8.09181 11.8165 7.99927 11.8165C7.90673 11.8165 7.81509 11.7983 7.72963 11.7628C7.64416 11.7273 7.56654 11.6753 7.50122 11.6097L2.81372 6.92222C2.68163 6.79013 2.60742 6.61097 2.60742 6.42417C2.60742 6.23737 2.68163 6.05821 2.81372 5.92612C2.94581 5.79403 3.12496 5.71982 3.31177 5.71982C3.49857 5.71982 3.67772 5.79403 3.80981 5.92612L7.99985 10.1162L12.1899 5.92554C12.322 5.79345 12.5011 5.71924 12.6879 5.71924C12.8747 5.71924 13.0539 5.79345 13.186 5.92554C13.3181 6.05763 13.3923 6.23678 13.3923 6.42358C13.3923 6.61039 13.3181 6.78954 13.186 6.92163L13.1848 6.92222Z" />
+                </svg>
+              </button>
+              <div
+                id="faq-1-content"
+                className="px-5 pb-5"
+                style={{ display: "none" }}
+              >
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  AI automation uses smart technology to handle tasks that used
+                  to require human effort, from answering customer questions to
+                  managing your books. It's like having a tireless digital
+                  assistant that works 24/7 to make your business more
+                  efficient.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ 2 - How will this help my business? */}
+            <div className="bg-white/5 rounded-lg border border-gray-200/10">
+              <button
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-white/10 transition-colors rounded-lg"
+                onClick={() => {
+                  const content = document.getElementById("faq-2-content");
+                  const icon = document.getElementById("faq-2-icon");
+                  if (content && icon) {
+                    const isOpen = content.style.display !== "none";
+                    content.style.display = isOpen ? "none" : "block";
+                    icon.style.transform = isOpen
+                      ? "rotate(0deg)"
+                      : "rotate(180deg)";
+                  }
+                }}
+              >
+                <span className="text-supremint-blue font-medium text-base">
+                  How will this help my business?
+                </span>
+                <svg
+                  id="faq-2-icon"
+                  className="w-4 h-4 text-supremint-blue transition-transform duration-200"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M13.1848 6.92222L8.49731 11.6097C8.43199 11.6753 8.35437 11.7273 8.26891 11.7628C8.18344 11.7983 8.09181 11.8165 7.99927 11.8165C7.90673 11.8165 7.81509 11.7983 7.72963 11.7628C7.64416 11.7273 7.56654 11.6753 7.50122 11.6097L2.81372 6.92222C2.68163 6.79013 2.60742 6.61097 2.60742 6.42417C2.60742 6.23737 2.68163 6.05821 2.81372 5.92612C2.94581 5.79403 3.12496 5.71982 3.31177 5.71982C3.49857 5.71982 3.67772 5.79403 3.80981 5.92612L7.99985 10.1162L12.1899 5.92554C12.322 5.79345 12.5011 5.71924 12.6879 5.71924C12.8747 5.71924 13.0539 5.79345 13.186 5.92554C13.3181 6.05763 13.3923 6.23678 13.3923 6.42358C13.3923 6.61039 13.3181 6.78954 13.186 6.92163L13.1848 6.92222Z" />
+                </svg>
+              </button>
+              <div
+                id="faq-2-content"
+                className="px-5 pb-5"
+                style={{ display: "none" }}
+              >
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  AI automation streamlines your operations, reduces manual
+                  work, and improves efficiency. This means cost savings, faster
+                  turnaround times, and more consistent service delivery for
+                  your customers.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ 3 - Is it secure? */}
+            <div className="bg-white/5 rounded-lg border border-gray-200/10">
+              <button
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-white/10 transition-colors rounded-lg"
+                onClick={() => {
+                  const content = document.getElementById("faq-3-content");
+                  const icon = document.getElementById("faq-3-icon");
+                  if (content && icon) {
+                    const isOpen = content.style.display !== "none";
+                    content.style.display = isOpen ? "none" : "block";
+                    icon.style.transform = isOpen
+                      ? "rotate(0deg)"
+                      : "rotate(180deg)";
+                  }
+                }}
+              >
+                <span className="text-supremint-blue font-medium text-base">
+                  Is it secure?
+                </span>
+                <svg
+                  id="faq-3-icon"
+                  className="w-4 h-4 text-supremint-blue transition-transform duration-200"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M13.1848 6.92222L8.49731 11.6097C8.43199 11.6753 8.35437 11.7273 8.26891 11.7628C8.18344 11.7983 8.09181 11.8165 7.99927 11.8165C7.90673 11.8165 7.81509 11.7983 7.72963 11.7628C7.64416 11.7273 7.56654 11.6753 7.50122 11.6097L2.81372 6.92222C2.68163 6.79013 2.60742 6.61097 2.60742 6.42417C2.60742 6.23737 2.68163 6.05821 2.81372 5.92612C2.94581 5.79403 3.12496 5.71982 3.31177 5.71982C3.49857 5.71982 3.67772 5.79403 3.80981 5.92612L7.99985 10.1162L12.1899 5.92554C12.322 5.79345 12.5011 5.71924 12.6879 5.71924C12.8747 5.71924 13.0539 5.79345 13.186 5.92554C13.3181 6.05763 13.3923 6.23678 13.3923 6.42358C13.3923 6.61039 13.3181 6.78954 13.186 6.92163L13.1848 6.92222Z" />
+                </svg>
+              </button>
+              <div
+                id="faq-3-content"
+                className="px-5 pb-5"
+                style={{ display: "none" }}
+              >
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  Yes, security is our top priority. We implement
+                  enterprise-grade security measures, including data encryption,
+                  secure API connections, and compliance with industry standards
+                  to protect your business data.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ 4 - Do I need technical knowledge? */}
+            <div className="bg-white/5 rounded-lg border border-gray-200/10">
+              <button
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-white/10 transition-colors rounded-lg"
+                onClick={() => {
+                  const content = document.getElementById("faq-4-content");
+                  const icon = document.getElementById("faq-4-icon");
+                  if (content && icon) {
+                    const isOpen = content.style.display !== "none";
+                    content.style.display = isOpen ? "none" : "block";
+                    icon.style.transform = isOpen
+                      ? "rotate(0deg)"
+                      : "rotate(180deg)";
+                  }
+                }}
+              >
+                <span className="text-supremint-blue font-medium text-base">
+                  Do I need technical knowledge to use AI automation?
+                </span>
+                <svg
+                  id="faq-4-icon"
+                  className="w-4 h-4 text-supremint-blue transition-transform duration-200"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M13.1848 6.92222L8.49731 11.6097C8.43199 11.6753 8.35437 11.7273 8.26891 11.7628C8.18344 11.7983 8.09181 11.8165 7.99927 11.8165C7.90673 11.8165 7.81509 11.7983 7.72963 11.7628C7.64416 11.7273 7.56654 11.6753 7.50122 11.6097L2.81372 6.92222C2.68163 6.79013 2.60742 6.61097 2.60742 6.42417C2.60742 6.23737 2.68163 6.05821 2.81372 5.92612C2.94581 5.79403 3.12496 5.71982 3.31177 5.71982C3.49857 5.71982 3.67772 5.79403 3.80981 5.92612L7.99985 10.1162L12.1899 5.92554C12.322 5.79345 12.5011 5.71924 12.6879 5.71924C12.8747 5.71924 13.0539 5.79345 13.186 5.92554C13.3181 6.05763 13.3923 6.23678 13.3923 6.42358C13.3923 6.61039 13.3181 6.78954 13.186 6.92163L13.1848 6.92222Z" />
+                </svg>
+              </button>
+              <div
+                id="faq-4-content"
+                className="px-5 pb-5"
+                style={{ display: "none" }}
+              >
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  Not at all! Our AI automation solutions are designed to be
+                  user-friendly and intuitive. We handle all the technical setup
+                  and provide comprehensive training and support to ensure you
+                  can use the systems effectively.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ 5 - How do I get started? */}
+            <div className="bg-white/5 rounded-lg border border-gray-200/10">
+              <button
+                className="w-full flex items-center justify-between p-5 text-left hover:bg-white/10 transition-colors rounded-lg"
+                onClick={() => {
+                  const content = document.getElementById("faq-5-content");
+                  const icon = document.getElementById("faq-5-icon");
+                  if (content && icon) {
+                    const isOpen = content.style.display !== "none";
+                    content.style.display = isOpen ? "none" : "block";
+                    icon.style.transform = isOpen
+                      ? "rotate(0deg)"
+                      : "rotate(180deg)";
+                  }
+                }}
+              >
+                <span className="text-supremint-blue font-medium text-base">
+                  How do I get started?
+                </span>
+                <svg
+                  id="faq-5-icon"
+                  className="w-4 h-4 text-supremint-blue transition-transform duration-200"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M13.1848 6.92222L8.49731 11.6097C8.43199 11.6753 8.35437 11.7273 8.26891 11.7628C8.18344 11.7983 8.09181 11.8165 7.99927 11.8165C7.90673 11.8165 7.81509 11.7983 7.72963 11.7628C7.64416 11.7273 7.56654 11.6753 7.50122 11.6097L2.81372 6.92222C2.68163 6.79013 2.60742 6.61097 2.60742 6.42417C2.60742 6.23737 2.68163 6.05821 2.81372 5.92612C2.94581 5.79403 3.12496 5.71982 3.31177 5.71982C3.49857 5.71982 3.67772 5.79403 3.80981 5.92612L7.99985 10.1162L12.1899 5.92554C12.322 5.79345 12.5011 5.71924 12.6879 5.71924C12.8747 5.71924 13.0539 5.79345 13.186 5.92554C13.3181 6.05763 13.3923 6.23678 13.3923 6.42358C13.3923 6.61039 13.3181 6.78954 13.186 6.92163L13.1848 6.92222Z" />
+                </svg>
+              </button>
+              <div
+                id="faq-5-content"
+                className="px-5 pb-5"
+                style={{ display: "none" }}
+              >
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  Simply book a free consultation call with our team. We'll
+                  discuss your business needs, identify automation
+                  opportunities, and create a customized plan to get you started
+                  with AI automation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="max-w-3xl mx-auto mt-16 bg-supremint-blue rounded-xl p-8 text-center">
+            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              Ready to Transform Your Business?
+            </h3>
+            <p className="text-gray-300 text-lg mb-6">
+              Book a Call Today and Start Automating
+            </p>
+            <button className="bg-supremint-red text-white px-6 py-3 rounded-md font-medium text-sm hover:bg-red-600 transition-colors inline-flex items-center gap-2">
+              Book a free call
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
