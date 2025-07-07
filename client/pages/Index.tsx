@@ -135,11 +135,11 @@ export default function Index() {
           {/* Service Cards */}
           <div className="flex flex-col gap-24 max-w-6xl mx-auto">
             {/* Workflow Automation */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
-              <div className="w-full lg:w-96 h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+              <div className="w-full lg:w-[450px] h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center flex-shrink-0">
                 <div className="w-full h-full bg-gradient-to-t from-transparent to-black/20 rounded-xl"></div>
               </div>
-              <div className="flex-1 space-y-6">
+              <div className="flex-1 space-y-6 lg:max-w-[470px]">
                 <div className="inline-flex items-center px-3 py-2 bg-supremint-gray rounded-md">
                   <span className="text-supremint-blue text-sm font-medium">
                     Workflow Automation
