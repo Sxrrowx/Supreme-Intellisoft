@@ -239,8 +239,8 @@ export default function Index() {
             </div>
 
             {/* Custom Projects */}
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-20">
-              <div className="w-full lg:w-96 h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center relative overflow-hidden">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+              <div className="w-full lg:w-[450px] h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center relative overflow-hidden flex-shrink-0">
                 {/* Custom dashboard interface */}
                 <div className="w-full h-full bg-supremint-blue rounded-xl p-4 relative">
                   <div className="bg-supremint-gray rounded-lg p-4 h-full flex flex-col gap-3">
