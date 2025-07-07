@@ -541,7 +541,7 @@ export default function Index() {
       </div>
 
       {/* Process Section */}
-      <div className="relative py-24 px-4 sm:px-8 lg:px-16 bg-white">
+      <div className="relative py-24 px-4 sm:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="flex flex-col items-center text-center mb-16">
