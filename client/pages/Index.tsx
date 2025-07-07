@@ -133,7 +133,7 @@ export default function Index() {
           </div>
 
           {/* Service Cards */}
-          <div className="grid lg:grid-cols-2 gap-20 max-w-6xl mx-auto">
+          <div className="flex flex-col gap-24 max-w-6xl mx-auto">
             {/* Workflow Automation */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
               <div className="w-full lg:w-96 h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center">
