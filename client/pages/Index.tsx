@@ -165,15 +165,15 @@ export default function Index() {
             </div>
 
             {/* AI Assistant */}
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-20">
-              <div className="w-full lg:w-96 h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+              <div className="w-full lg:w-[450px] h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center flex-shrink-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/c827f90cd784978224d5bb08a71f5e324bfd3ebd?width=700"
                   alt="AI Assistant Interface"
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-              <div className="flex-1 space-y-6">
+              <div className="flex-1 space-y-6 lg:max-w-[470px]">
                 <div className="inline-flex items-center px-3 py-2 bg-supremint-gray rounded-md">
                   <span className="text-supremint-blue text-sm font-medium">
                     AI Assistant
