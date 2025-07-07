@@ -906,6 +906,272 @@ export default function Index() {
           </div>
         </div>
       </div>
+
+      {/* Pricing Section */}
+      <div className="relative py-24 px-4 sm:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex flex-col items-center text-center mb-16">
+            {/* Badge */}
+            <div className="inline-flex items-center px-3 py-2 bg-supremint-gray/80 rounded-md mb-6">
+              <span className="text-supremint-blue text-sm font-medium">
+                Pricing
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="max-w-3xl mb-6">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-supremint-blue">
+                The Best AI Automation, at the Right Price
+              </h2>
+            </div>
+
+            {/* Subtitle */}
+            <div className="max-w-2xl mb-8">
+              <p className="text-supremint-blue text-lg font-medium leading-relaxed">
+                Choose a plan that fits your business needs and start automating
+                with AI
+              </p>
+            </div>
+
+            {/* Monthly/Annually Toggle */}
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-supremint-blue text-base font-medium">
+                Monthly
+              </span>
+              <div className="relative">
+                <div className="w-16 h-8 bg-supremint-blue rounded-full p-1 cursor-pointer">
+                  <div className="w-6 h-6 bg-white rounded-full shadow-md transform translate-x-8 transition-transform"></div>
+                </div>
+              </div>
+              <span className="text-supremint-blue text-base font-medium">
+                Annually
+              </span>
+            </div>
+          </div>
+
+          {/* Pricing Cards */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Starter Plan */}
+            <div className="bg-supremint-gray rounded-lg p-8 space-y-8">
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-center w-8 h-8 rounded">
+                    <svg
+                      width="25"
+                      height="26"
+                      viewBox="0 0 25 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.95119 19.446C9.51076 20.4089 8.04103 22.655 3.91115 22.655C3.70395 22.655 3.50523 22.5727 3.35872 22.4262C3.21221 22.2797 3.1299 22.081 3.1299 21.8738C3.1299 17.7439 5.37599 16.2742 6.33888 15.8337C6.43224 15.7912 6.53308 15.7674 6.63563 15.7638C6.73817 15.7602 6.84043 15.7768 6.93655 15.8127C7.03267 15.8486 7.12078 15.9031 7.19585 15.9731C7.27091 16.043 7.33146 16.1271 7.37404 16.2205C7.41661 16.3138 7.44039 16.4146 7.44399 16.5172C7.4476 16.6197 7.43098 16.722 7.39507 16.8181C7.35916 16.9142 7.30466 17.0024 7.2347 17.0774C7.16474 17.1525 7.08068 17.213 6.98732 17.2556C6.35939 17.5417 4.97365 18.4626 4.72951 21.0554C7.32228 20.8113 8.24513 19.4255 8.52931 18.7976C8.57189 18.7042 8.63244 18.6202 8.7075 18.5502C8.78257 18.4803 8.87067 18.4258 8.9668 18.3899C9.06292 18.3539 9.16517 18.3373 9.26772 18.3409C9.37027 18.3445 9.47111 18.3683 9.56447 18.4109C9.65783 18.4535 9.74189 18.514 9.81185 18.5891C9.88181 18.6641 9.9363 18.7522 9.97221 18.8484C10.0081 18.9445 10.0248 19.0467 10.0211 19.1493C10.0175 19.2518 9.99376 19.3527 9.95119 19.446ZM21.8652 5.38354C21.8421 5.00261 21.6803 4.64332 21.4105 4.37346C21.1406 4.10361 20.7813 3.94185 20.4004 3.9187C19.1719 3.84545 16.0322 3.95776 13.4277 6.56225L8.59865 11.3953C8.52612 11.4679 8.44 11.5256 8.3452 11.5649C8.2504 11.6043 8.14877 11.6246 8.04611 11.6247C7.8388 11.6249 7.6399 11.5427 7.49318 11.3962C7.34645 11.2498 7.26392 11.051 7.26374 10.8437C7.26356 10.6364 7.34574 10.4375 7.4922 10.2908L10.086 7.69604C10.1403 7.64142 10.1772 7.57196 10.1921 7.4964C10.2071 7.42085 10.1993 7.34256 10.1699 7.27138C10.1405 7.20021 10.0907 7.13932 10.0267 7.09638C9.96279 7.05343 9.88758 7.03035 9.81056 7.03002H7.26564C7.05982 7.02894 6.85583 7.06879 6.66555 7.14725C6.47527 7.22571 6.30248 7.34122 6.15724 7.48706L2.80763 10.8386C2.60221 11.0439 2.45806 11.3024 2.39137 11.585C2.32468 11.8677 2.33808 12.1633 2.43006 12.4388C2.52205 12.7142 2.68899 12.9586 2.91214 13.1445C3.13529 13.3303 3.40582 13.4503 3.69337 13.491L7.45021 14.0154L11.7676 18.3328L12.292 22.0915C12.3323 22.3791 12.4523 22.6497 12.6383 22.8726C12.8244 23.0956 13.069 23.2621 13.3447 23.3533C13.5053 23.4069 13.6735 23.4343 13.8428 23.4343C14.0478 23.4347 14.2508 23.3945 14.4402 23.3161C14.6296 23.2376 14.8016 23.1225 14.9463 22.9773L18.2979 19.6277C18.4433 19.4821 18.5585 19.3093 18.6369 19.1191C18.7154 18.9289 18.7554 18.725 18.7549 18.5193V15.9744C18.7548 15.8971 18.7317 15.8217 18.6888 15.7575C18.6458 15.6934 18.5847 15.6434 18.5133 15.614C18.442 15.5845 18.3635 15.5768 18.2877 15.592C18.212 15.6071 18.1425 15.6443 18.0879 15.699L15.4932 18.2927C15.4173 18.3687 15.3266 18.4282 15.2266 18.4675C15.1267 18.5069 15.0198 18.5252 14.9125 18.5213C14.8052 18.5175 14.6998 18.4915 14.603 18.4452C14.5061 18.3988 14.4199 18.3329 14.3496 18.2517C14.2215 18.0967 14.1564 17.8991 14.1672 17.6983C14.1781 17.4974 14.2641 17.308 14.4082 17.1677L19.2197 12.3562C21.8262 9.75073 21.9385 6.61108 21.8652 5.38159V5.38354Z"
+                        fill="#003049"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-medium text-supremint-blue">
+                    Starter
+                  </h3>
+                </div>
+
+                <div className="space-y-1">
+                  <div className="text-3xl font-medium text-supremint-blue">
+                    $37<span className="text-base font-normal">/month</span>
+                  </div>
+                </div>
+
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  Perfect for small businesses starting with AI automation.
+                </p>
+              </div>
+
+              <button className="w-full bg-supremint-blue text-white py-3 px-4 rounded-md font-medium text-sm hover:bg-blue-700 transition-colors">
+                Choose this plan
+              </button>
+
+              <div className="space-y-4">
+                <div className="text-supremint-blue font-medium text-sm">
+                  What's Included:
+                </div>
+                <div className="space-y-3">
+                  {[
+                    "Basic workflow automation",
+                    "AI-powered personal assistant",
+                    "Standard analytics & reporting",
+                    "Email & chat support",
+                    "Up to 3 AI integrations",
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <svg
+                        className="w-5 h-5 text-supremint-blue flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-supremint-blue text-sm">
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Professional Plan */}
+            <div className="bg-supremint-gray rounded-lg p-8 space-y-8 relative">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-center w-8 h-8 rounded">
+                      <svg
+                        width="26"
+                        height="26"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.5488 13.0317L10.6113 24.7505C10.4954 24.8742 10.3424 24.9568 10.1754 24.9859C10.0084 25.015 9.83647 24.9891 9.68554 24.9119C9.53462 24.8347 9.41288 24.7105 9.33871 24.5581C9.26455 24.4057 9.24197 24.2333 9.27439 24.0669L10.706 16.9058L5.0781 14.7925C4.95723 14.7473 4.84944 14.6728 4.76437 14.5758C4.67929 14.4787 4.61958 14.3622 4.59056 14.2364C4.56155 14.1107 4.56413 13.9797 4.59808 13.8552C4.63203 13.7307 4.69629 13.6165 4.78513 13.5229L15.7226 1.80419C15.8385 1.6805 15.9915 1.59786 16.1585 1.56874C16.3255 1.53962 16.4975 1.56561 16.6484 1.64279C16.7993 1.71996 16.921 1.84413 16.9952 1.99656C17.0694 2.14898 17.092 2.3214 17.0595 2.48779L15.624 9.65673L21.2519 11.7671C21.3719 11.8126 21.4788 11.887 21.5632 11.9836C21.6476 12.0803 21.707 12.1962 21.7359 12.3212C21.7649 12.4462 21.7626 12.5764 21.7293 12.7004C21.696 12.8243 21.6326 12.9381 21.5449 13.0317H21.5488Z"
+                          fill="#003049"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-medium text-supremint-blue">
+                      Professional
+                    </h3>
+                  </div>
+                  <div className="bg-supremint-blue text-white px-3 py-1 rounded-md text-xs font-medium">
+                    Popular
+                  </div>
+                </div>
+
+                <div className="space-y-1">
+                  <div className="text-3xl font-medium text-supremint-blue">
+                    $75<span className="text-base font-normal">/month</span>
+                  </div>
+                </div>
+
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  Perfect for small businesses starting with AI automation.
+                </p>
+              </div>
+
+              <button className="w-full bg-supremint-blue text-white py-3 px-4 rounded-md font-medium text-sm hover:bg-blue-700 transition-colors">
+                Choose this plan
+              </button>
+
+              <div className="space-y-4">
+                <div className="text-supremint-blue font-medium text-sm">
+                  What's Included:
+                </div>
+                <div className="space-y-3">
+                  {[
+                    "Advanced workflow automation",
+                    "AI-driven sales & marketing tools",
+                    "Enhanced data analytics & insights",
+                    "Priority customer support",
+                    "Up to 10 AI integrations",
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <svg
+                        className="w-5 h-5 text-supremint-blue flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-supremint-blue text-sm">
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="bg-supremint-gray rounded-lg p-8 space-y-8">
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-center w-8 h-8 rounded">
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M23.748 9.64803C23.748 9.65877 23.748 9.66854 23.7412 9.67928L21.5263 19.8228C21.4581 20.18 21.2675 20.5022 20.9873 20.734C20.7071 20.9657 20.3548 21.0925 19.9912 21.0924H5.67768C5.31422 21.0922 4.96217 20.9654 4.68215 20.7337C4.40213 20.5019 4.21165 20.1799 4.1435 19.8228L1.92866 9.67928C1.92866 9.66854 1.92377 9.65877 1.92182 9.64803C1.8612 9.31219 1.9122 8.96574 2.06703 8.66161C2.22185 8.35749 2.47199 8.11242 2.77922 7.96384C3.08644 7.81527 3.43386 7.77136 3.76839 7.83883C4.10292 7.9063 4.40616 8.08144 4.63178 8.33748L7.91987 11.8814L11.416 4.04061C11.4161 4.03735 11.4161 4.03409 11.416 4.03084C11.541 3.7597 11.7411 3.53005 11.9925 3.36908C12.244 3.20811 12.5363 3.12256 12.8349 3.12256C13.1335 3.12256 13.4258 3.20811 13.6773 3.36908C13.9288 3.53005 14.1288 3.7597 14.2539 4.03084C14.2537 4.03409 14.2537 4.03735 14.2539 4.04061L17.7499 11.8814L21.038 8.33748C21.2641 8.08334 21.567 7.90991 21.9006 7.84354C22.2342 7.77718 22.5804 7.82149 22.8865 7.96975C23.1926 8.11802 23.442 8.36213 23.5968 8.66503C23.7516 8.96793 23.8033 9.31307 23.7441 9.64803H23.748Z"
+                        fill="#003049"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-medium text-supremint-blue">
+                    Enterprise
+                  </h3>
+                </div>
+
+                <div className="space-y-1">
+                  <div className="text-3xl font-medium text-supremint-blue">
+                    Custom
+                  </div>
+                </div>
+
+                <p className="text-supremint-blue text-sm leading-relaxed">
+                  Perfect for small businesses starting with AI automation.
+                </p>
+              </div>
+
+              <button className="w-full bg-supremint-blue/10 text-supremint-blue py-3 px-4 rounded-md font-medium text-sm hover:bg-supremint-blue/20 transition-colors">
+                Schedule A Call
+              </button>
+
+              <div className="space-y-4">
+                <div className="text-supremint-blue font-medium text-sm">
+                  What's Included:
+                </div>
+                <div className="space-y-3">
+                  {[
+                    "Fully customizable AI automation",
+                    "Dedicated AI business consultant",
+                    "Enterprise-grade compliance",
+                    "24/7 VIP support",
+                    "Unlimited AI integrations",
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <svg
+                        className="w-5 h-5 text-supremint-blue flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-supremint-blue text-sm">
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
