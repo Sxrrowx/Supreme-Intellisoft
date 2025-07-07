@@ -344,6 +344,269 @@ export default function Index() {
           </div>
         </div>
       </div>
+
+      {/* Process Section */}
+      <div className="relative py-24 px-4 sm:px-8 lg:px-16 bg-white">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex flex-col items-center text-center mb-16">
+            {/* Badge */}
+            <div className="inline-flex items-center px-3 py-2 bg-supremint-gray rounded-md mb-6">
+              <span className="text-supremint-blue text-sm font-medium">Our Process</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="max-w-3xl mb-4">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-supremint-blue">
+                Our Simple and Scalable Process
+              </h2>
+            </div>
+
+            {/* Subtitle */}
+            <div className="max-w-2xl">
+              <p className="text-supremint-blue text-lg font-medium leading-relaxed">
+                We design, develop, and implement automation tools that help you work smarter, not harder
+              </p>
+            </div>
+          </div>
+
+          {/* Process Cards Grid */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Step 1: Smart Analyzing */}
+            <div className="bg-supremint-blue rounded-lg p-8 text-white">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center px-2 py-1 border border-white rounded text-xs font-medium">
+                    Step 1
+                  </div>
+                  <h3 className="text-2xl font-medium">Smart Analyzing</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    We assess your needs and identify AI solutions to streamline workflows and improve efficiency.
+                  </p>
+                </div>
+
+                {/* Analysis Visualization */}
+                <div className="bg-gray-200 rounded-lg p-6 h-48">
+                  <div className="flex justify-between items-start h-full">
+                    {/* Left: Radar Chart */}
+                    <div className="flex flex-col items-center space-y-3">
+                      <div className="relative w-24 h-24">
+                        {/* Concentric circles */}
+                        <div className="absolute inset-0 border border-gray-400 rounded-full opacity-20"></div>
+                        <div className="absolute inset-3 border border-gray-400 rounded-full opacity-20"></div>
+                        <div className="absolute inset-6 border border-gray-400 rounded-full opacity-20"></div>
+                        {/* Radar sweep */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-supremint-red/30 to-transparent rounded-full animate-pulse"></div>
+                      </div>
+                      <p className="text-supremint-blue text-xs text-center">
+                        Analyzing current workflow..
+                      </p>
+                    </div>
+
+                    {/* Right: Checklist */}
+                    <div className="flex-1 ml-6 space-y-2">
+                      <div className="flex items-center space-x-2 bg-white/10 px-3 py-2 rounded text-xs">
+                        <svg className="w-3 h-3 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-supremint-blue">System check</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white/10 px-3 py-2 rounded text-xs">
+                        <svg className="w-3 h-3 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-supremint-blue">Process check</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white/10 px-3 py-2 rounded text-xs">
+                        <svg className="w-3 h-3 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-supremint-blue">Speed check</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white/10 px-3 py-2 rounded text-xs">
+                        <svg className="w-3 h-3 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-supremint-blue">Manual work</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-white/10 px-3 py-2 rounded text-xs">
+                        <svg className="w-3 h-3 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-supremint-blue">Repetitive tasks</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2: AI Development */}
+            <div className="bg-supremint-blue rounded-lg p-8 text-white">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center px-2 py-1 border border-white rounded text-xs font-medium">
+                    Step 2
+                  </div>
+                  <h3 className="text-2xl font-medium">AI Development</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    Our team builds intelligent automation systems tailored to your business processes.
+                  </p>
+                </div>
+
+                {/* Code Editor Visualization */}
+                <div className="bg-gray-200 rounded-lg p-6 h-48">
+                  <div className="bg-supremint-blue/20 rounded p-2 mb-4">
+                    <div className="flex items-center justify-between text-xs">
+                      <div className="flex space-x-1">
+                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      </div>
+                      <div className="text-supremint-blue">automation_script.py</div>
+                      <div className="flex space-x-1">
+                        <div className="w-3 h-3 bg-supremint-blue/30 rounded"></div>
+                        <div className="w-3 h-3 bg-supremint-blue/30 rounded"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-1 text-xs font-mono">
+                    <div className="text-supremint-blue">
+                      <span className="text-supremint-red">def</span> check_trigger(self, value):
+                    </div>
+                    <div className="text-supremint-blue ml-4">
+                      self.threshold = threshold
+                    </div>
+                    <div className="text-supremint-blue ml-4">
+                      self.status = "inactive"
+                    </div>
+                    <div className="text-supremint-blue ml-4">
+                      if value > self.threshold:
+                    </div>
+                    <div className="text-supremint-blue ml-8">
+                      self.status = "active"
+                    </div>
+                    <div className="text-supremint-blue ml-8">
+                      return "Automation triggered!"
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3: Seamless Integration */}
+            <div className="bg-supremint-blue rounded-lg p-8 text-white">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center px-2 py-1 border border-white rounded text-xs font-medium">
+                    Step 3
+                  </div>
+                  <h3 className="text-2xl font-medium">Seamless Integration</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    We smoothly integrate AI solutions into your existing infrastructure with minimal disruption.
+                  </p>
+                </div>
+
+                {/* Integration Visualization */}
+                <div className="bg-gray-200 rounded-lg p-6 h-48">
+                  <div className="flex items-center justify-between h-full">
+                    {/* Our Solution */}
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="relative w-12 h-12">
+                        <div className="w-full h-full rounded-lg bg-gray-300 shadow-lg"></div>
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/851492e1d614a859d0241e6ab3526bd740113a0d?width=93"
+                          alt="Supremint Logo"
+                          className="absolute inset-1 w-10 h-5"
+                        />
+                      </div>
+                      <p className="text-supremint-blue text-xs">Our solution</p>
+                    </div>
+
+                    {/* Connection Lines */}
+                    <div className="flex-1 flex flex-col items-center space-y-2">
+                      <div className="w-16 h-0.5 bg-supremint-red/30 rounded"></div>
+                      <div className="w-16 h-0.5 bg-supremint-red/30 rounded"></div>
+                      <div className="w-16 h-0.5 bg-supremint-red/30 rounded"></div>
+                    </div>
+
+                    {/* Your Stack */}
+                    <div className="flex flex-col items-center space-y-2">
+                      <div className="w-12 h-12 bg-supremint-blue rounded p-2 flex items-center justify-center">
+                        <div className="w-full h-full bg-white/20 rounded"></div>
+                      </div>
+                      <p className="text-supremint-blue text-xs">Your stack</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 4: Continuous Optimization */}
+            <div className="bg-supremint-blue rounded-lg p-8 text-white">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center px-2 py-1 border border-white rounded text-xs font-medium">
+                    Step 4
+                  </div>
+                  <h3 className="text-2xl font-medium">Continuous Optimization</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    We refine performance, analyze insights, and enhance automation for long-term growth.
+                  </p>
+                </div>
+
+                {/* Optimization Dashboard */}
+                <div className="bg-gray-200 rounded-lg p-6 h-48">
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between bg-white/10 px-3 py-2 rounded text-xs">
+                      <div className="flex items-center space-x-2">
+                        <svg className="w-4 h-4 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+                        </svg>
+                        <div>
+                          <div className="text-supremint-blue font-medium">Chatbot system</div>
+                          <div className="text-supremint-blue/70">Efficiency will increase by 20%</div>
+                        </div>
+                      </div>
+                      <svg className="w-4 h-4 text-supremint-red" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5 9.293 10.793a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+
+                    <div className="flex items-center justify-between bg-white/10 px-3 py-2 rounded text-xs">
+                      <div className="flex items-center space-x-2">
+                        <svg className="w-4 h-4 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                        </svg>
+                        <div>
+                          <div className="text-supremint-blue font-medium">Workflow system</div>
+                          <div className="text-supremint-blue/70">Update available..</div>
+                        </div>
+                      </div>
+                      <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
+                    </div>
+
+                    <div className="flex items-center justify-between bg-white/10 px-3 py-2 rounded text-xs">
+                      <div className="flex items-center space-x-2">
+                        <svg className="w-4 h-4 text-supremint-blue" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                        <div>
+                          <div className="text-supremint-blue font-medium">Sales system</div>
+                          <div className="text-supremint-blue/70">Up to date</div>
+                        </div>
+                      </div>
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
