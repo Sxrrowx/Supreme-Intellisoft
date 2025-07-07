@@ -214,11 +214,14 @@ export default function Index() {
             {/* Sales & Marketing */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="w-full lg:w-[450px] h-80 bg-supremint-gray rounded-2xl p-12 flex items-center justify-center flex-shrink-0">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f8827b5fd553280d0cfe2ea38fe53fbcd7a3b2c?width=700"
-                  alt="Sales & Marketing Interface"
-                  className="w-full h-full object-cover rounded-xl"
-                />
+                <div className="w-full h-full relative rounded-xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f8827b5fd553280d0cfe2ea38fe53fbcd7a3b2c?width=700"
+                    alt="Sales & Marketing Interface"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+                </div>
               </div>
               <div className="flex-1 space-y-6 lg:max-w-[470px]">
                 <div className="inline-flex items-center px-3 py-2 bg-supremint-gray/80 rounded-md">
